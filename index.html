@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>DEEKSHITHA Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>BEKKAM DEEKSHITHA REDDY</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+               <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="project.html">Projects</a></div>
+              <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+  <a href="certifications.html">Certifications</a>
+</div>
+
+               <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+  <a href="contact.html">Contact</a>
+</div>
+
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <div class="link"><a href="about.html">About</a></div>
+               <a href="skills.html">Skills</a>
+                <a href="project.html">Projects</a>
+                <a href="certifications.html">Certifications</a>
+                <a href="contact.html">Contact</a>
+
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="main.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Deekshitha</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">I am a Computer Science and Engineering student specializing in Social and Digital Media Marketing. With experience in web development and a passion for designing engaging posters and visual content, I enjoy combining technology and creativity to build impactful digital experiences. I am committed to continuous learning and love exploring new ways to connect brands with their audiences online.</p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://github.com/Deekshithareddy760" target="_blank"><i class="fa-brands fa-github"></i></a>
+<a href="https://linkedin.com/in/bekkam-deekshitha-reddy-a67438255" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+<!-- <a href="https://www.canva.com/design/DAFXKUAmZdk/l42YWiidv4FZiOoLrnC4vA/edit?utm_content=DAFXKUAmZdk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+  Canva
+</a> -->
+
+
+
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+  <a href="https://drive.google.com/file/d/1HxWBoNNw_h59vPFTrk3pnmaun1tqAtuD/view?usp=sharing" target="_blank">
+    <button>Download CV</button>
+  </a>
+</div>
+
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
